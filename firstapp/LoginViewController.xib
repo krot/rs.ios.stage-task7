@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginButton" destination="BiE-4f-QGg" id="yaA-pe-Jhn"/>
+                <outlet property="loginTextField" destination="L7O-ST-jlw" id="hIW-Gc-v94"/>
+                <outlet property="passwordTextField" destination="1Jk-t8-3Wl" id="jrb-uR-zFe"/>
+                <outlet property="pinLabel" destination="Csl-yY-iYX" id="CZZ-V8-Gp1"/>
+                <outlet property="subView" destination="bKh-7p-uT8" id="d1F-54-0DT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="H9V-V2-tDY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSchool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-qH-iwA">
+                    <rect key="frame" x="101" y="124" width="212" height="42"/>
+                    <accessibility key="accessibilityConfiguration" label="RSSchool"/>
+                    <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="36"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Jk-t8-3Wl" customClass="RSTextField">
+                    <rect key="frame" x="36" y="310" width="342" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="editingDidBegin:" destination="-1" eventType="editingDidBegin" id="zu7-Xo-bAK"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiE-4f-QGg" customClass="RSLoginButton">
+                    <rect key="frame" x="110" y="404" width="194" height="44"/>
+                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="20"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="Authorize" image="Person">
+                        <color key="titleColor" name="Little Boy Blue"/>
+                    </state>
+                    <connections>
+                        <action selector="loginOnTap:forEvent:" destination="-1" eventType="touchUpInside" id="2Mh-l5-IKO"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7O-ST-jlw" customClass="RSTextField">
+                    <rect key="frame" x="36" y="246" width="342" height="34"/>
+                    <edgeInsets key="layoutMargins" top="8" left="36" bottom="30" right="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="editingDidBegin:" destination="-1" eventType="editingDidBegin" id="szr-Ak-Jwm"/>
+                    </connections>
+                </textField>
+                <view hidden="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-7p-uT8">
+                    <rect key="frame" x="89" y="515" width="236" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csl-yY-iYX">
+                            <rect key="frame" x="93.5" y="15" width="49" height="0.0"/>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="18"/>
+                            <color key="textColor" name="Black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvl-aA-pdM" customClass="RSKeyButton">
+                            <rect key="frame" x="93" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="tEM-RB-0t5"/>
+                                <constraint firstAttribute="height" constant="50" id="yCs-Qf-u4j"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="24"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" name="Little Boy Blue"/>
+                            </state>
+                            <connections>
+                                <action selector="pinTapped:" destination="-1" eventType="touchUpInside" id="0x3-LN-CBa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIX-Bg-UtZ" customClass="RSKeyButton">
+                            <rect key="frame" x="163" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="2dE-ZS-cok"/>
+                                <constraint firstAttribute="height" constant="50" id="NSc-cW-nCT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="24"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" name="Little Boy Blue"/>
+                            </state>
+                            <connections>
+                                <action selector="pinTapped:" destination="-1" eventType="touchUpInside" id="WGQ-X6-v1s"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EA-ev-4pp" customClass="RSKeyButton">
+                            <rect key="frame" x="23" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Aau-zf-fQh"/>
+                                <constraint firstAttribute="width" constant="50" id="p0a-Kd-61h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="24"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" name="Little Boy Blue"/>
+                            </state>
+                            <connections>
+                                <action selector="pinTapped:" destination="-1" eventType="touchUpInside" id="7jW-lk-BRt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="CIX-Bg-UtZ" firstAttribute="leading" secondItem="tvl-aA-pdM" secondAttribute="trailing" constant="20" id="3wS-uJ-BPN"/>
+                        <constraint firstItem="tvl-aA-pdM" firstAttribute="top" secondItem="bKh-7p-uT8" secondAttribute="top" constant="45" id="7wf-JY-MJV"/>
+                        <constraint firstAttribute="bottom" secondItem="CIX-Bg-UtZ" secondAttribute="bottom" constant="15" id="BiI-AN-eZl"/>
+                        <constraint firstItem="CIX-Bg-UtZ" firstAttribute="top" secondItem="bKh-7p-uT8" secondAttribute="top" constant="45" id="CuQ-sm-tgp"/>
+                        <constraint firstItem="Csl-yY-iYX" firstAttribute="top" secondItem="bKh-7p-uT8" secondAttribute="top" constant="15" id="EIn-el-21E"/>
+                        <constraint firstAttribute="bottom" secondItem="1EA-ev-4pp" secondAttribute="bottom" constant="15" id="Mha-0o-pQv"/>
+                        <constraint firstItem="Csl-yY-iYX" firstAttribute="leading" secondItem="bKh-7p-uT8" secondAttribute="leading" constant="93.370448123235974" id="MnF-BN-Lnc"/>
+                        <constraint firstItem="tvl-aA-pdM" firstAttribute="leading" secondItem="1EA-ev-4pp" secondAttribute="trailing" constant="20" id="N6m-N4-nOJ"/>
+                        <constraint firstItem="1EA-ev-4pp" firstAttribute="top" secondItem="bKh-7p-uT8" secondAttribute="top" constant="45" id="Ok1-F7-MgF"/>
+                        <constraint firstItem="1EA-ev-4pp" firstAttribute="leading" secondItem="bKh-7p-uT8" secondAttribute="leading" constant="23" id="UJG-VN-gEO"/>
+                        <constraint firstItem="Csl-yY-iYX" firstAttribute="centerX" secondItem="tvl-aA-pdM" secondAttribute="centerX" id="Vtd-13-Fjn"/>
+                        <constraint firstAttribute="trailing" secondItem="CIX-Bg-UtZ" secondAttribute="trailing" constant="23" id="ZpN-dC-yud"/>
+                        <constraint firstAttribute="bottom" secondItem="tvl-aA-pdM" secondAttribute="bottom" constant="15" id="g7Y-IN-793"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BiE-4f-QGg" secondAttribute="trailing" constant="110" id="13m-LR-GWm"/>
+                <constraint firstItem="ZKM-qH-iwA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="80" id="2IT-UB-3op"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L7O-ST-jlw" secondAttribute="trailing" constant="36" id="8L9-bu-GAf"/>
+                <constraint firstItem="L7O-ST-jlw" firstAttribute="top" secondItem="ZKM-qH-iwA" secondAttribute="bottom" constant="80" id="ArD-oG-EOX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZKM-qH-iwA" secondAttribute="trailing" constant="101" id="EGW-LH-qW4"/>
+                <constraint firstItem="bKh-7p-uT8" firstAttribute="top" secondItem="BiE-4f-QGg" secondAttribute="bottom" constant="67" id="Gor-Ub-mqI"/>
+                <constraint firstItem="L7O-ST-jlw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="Ixu-sp-zWd"/>
+                <constraint firstItem="bKh-7p-uT8" firstAttribute="centerX" secondItem="BiE-4f-QGg" secondAttribute="centerX" id="PqZ-QA-yFV"/>
+                <constraint firstItem="BiE-4f-QGg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="110" id="TJH-Gf-Oja"/>
+                <constraint firstItem="1Jk-t8-3Wl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="WMA-yf-vAv"/>
+                <constraint firstItem="BiE-4f-QGg" firstAttribute="top" secondItem="1Jk-t8-3Wl" secondAttribute="bottom" constant="60" id="a6r-Tk-glt"/>
+                <constraint firstItem="ZKM-qH-iwA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="101" id="dAn-dN-e5h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Jk-t8-3Wl" secondAttribute="trailing" constant="36" id="hLI-qG-Dbs"/>
+                <constraint firstItem="1Jk-t8-3Wl" firstAttribute="top" secondItem="L7O-ST-jlw" secondAttribute="bottom" constant="30" id="mLe-bl-IOR"/>
+            </constraints>
+            <point key="canvasLocation" x="-114.40000000000001" y="14.842578710644679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Person" width="16" height="16"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Little Boy Blue">
+            <color red="0.50196078431372548" green="0.64313725490196083" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
