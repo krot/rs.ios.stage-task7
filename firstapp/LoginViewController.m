@@ -93,7 +93,6 @@
 }
 
 - (IBAction)loginOnTap:(UIButton *)sender forEvent:(UIEvent *)event {
-    [self hideKeyboard];
     CGPoint touchLocation = [[[event allTouches] anyObject] locationInView:sender];
     if (CGRectContainsPoint(sender.bounds, touchLocation)) {
         [self login];
